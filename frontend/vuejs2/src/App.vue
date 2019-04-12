@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-header :title="title"></app-header>
+    <app-header :title="title" @changeTitle="updatedTitle($event)"></app-header>
     <app-ninjas :ninjas="ninjas"></app-ninjas>
     <hr>
     <app-ninjas :ninjas="ninjas"></app-ninjas>
@@ -30,6 +30,11 @@ export default {
         {name: 'Yoshi', speciality: 'Data Diggin', show: false}
       ],
       title: "Vue Ninjas"
+    }
+  },
+  methods:{
+    updatedTitle: function(updatedTitle){
+      this.title = updatedTitle;
     }
   }
 }
