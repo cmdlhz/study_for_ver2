@@ -3,7 +3,7 @@ This is what I have been studying to create the second version of my portfolio w
 
 ## Table of Contents
 1. <b>[Front-End](https://github.com/cmdlhz/study_for_ver2#1-front-end)</b>
-    - 1.1. [Vue JS2 by Net Ninja](https://github.com/cmdlhz/study_for_ver2#11-vue-js2-by-net-ninja)
+    - 1.1. [VueJS2 by Net Ninja](https://github.com/cmdlhz/study_for_ver2#11-vue-js2-by-net-ninja)
     - 1.2. [Vuex by Net Ninja](https://github.com/cmdlhz/study_for_ver2#12-vuex-by-net-ninja)
     - 1.3. [Vuetify by Net Ninja](https://github.com/cmdlhz/study_for_ver2#13-vuetify-by-net-ninja)
 2. <b>[Back-End](https://github.com/cmdlhz/study_for_ver2#2-back-end)</b>
