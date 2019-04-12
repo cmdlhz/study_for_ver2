@@ -5,23 +5,27 @@
 </template>
 
 <script>
-	export default {
-		props: {
-			title: {
-				type: String
-			}
-		},
-		data(){
-			return{
-				title: 'Vue Ninjas'
-			}
-		},
-		methods: {
-			changeTitle: function(){
-				this.$emit('changeTitle', 'Vue Wizaarrrrds!!!')
-			}
+import { bus } from '../main';
+
+export default {
+	props: {
+		title: {
+			type: String
+		}
+	},
+	data(){
+		return{
+			title: 'Vue Ninjas'
+		}
+	},
+	methods: {
+		changeTitle: function(){
+			// this.$emit('changeTitle', 'Vue Wizaarrrrds!!!')
+			this.title = 'Vue Wizaarrrrds!!!';
+			bus.$emit('titleChanged', 'Vue Wizaarrrrds!!!');
 		}
 	}
+}
 </script>
 
 <style scoped>
