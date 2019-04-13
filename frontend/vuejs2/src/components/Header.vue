@@ -1,7 +1,7 @@
 <template>
   <nav>
 		<ul>
-			<li><router-link to="/" exact>Blog</router-link></li>
+			<li><router-link to="/" exact>Blogs</router-link></li>
 			<li><router-link to="/add" exact>Add a Blog</router-link></li>
 		</ul>
 	</nav>

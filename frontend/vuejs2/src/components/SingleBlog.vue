@@ -1,7 +1,11 @@
 <template>
   <div id="single-blog">
     <h1>{{ blog.title }}</h1>
-    <article>{{ blog.body }}</article>
+    <article>{{ blog.content }}</article>
+    <p>Author: {{ blog.author }}</p>
+    <ul>
+      <li v-for="category in blog.categories" :key="category.id">{{ category }}</li>
+    </ul>
   </div>
 </template>
 
@@ -15,10 +19,11 @@ export default {
   },
   created(){
     const axios = require('axios');
-    axios.get('https://jsonplaceholder.typicode.com/posts/' + this.id)
+    axios.get('https://nn-vuejs2-playlist.firebaseio.com/posts/' + this.id + '.json')
     .then(response => {
-      console.log(response);
-      this.blog = response.data;
+      return response.data;
+    }).then(response => {
+      this.blog = response;
     });
   }
 }

@@ -6,7 +6,7 @@
       <router-link :to="'/blog/' + blog.id">
         <h2 v-rainbow>{{ blog.title | toUppercase }}</h2>
       </router-link>
-      <article>{{ blog.body | snippet }}</article>
+      <article>{{ blog.content | snippet }}</article>
     </div>
   </div>
 </template>
@@ -26,11 +26,17 @@ export default {
   },
   created(){
     const axios = require('axios');
-    axios.get('https://jsonplaceholder.typicode.com/posts')
+    axios.get('https://nn-vuejs2-playlist.firebaseio.com/posts.json')
     .then(response => {
-      console.log(response);
-      this.blogs = response.data.slice(0,10);
-    });
+      return response.data;
+    }).then(response => {
+      let blogsArray = [];
+      for(let key in response){
+        response[key].id = key;
+        blogsArray.push(response[key]);
+      }
+      this.blogs = blogsArray;
+    })
   },
   computed:{
     
