@@ -18,6 +18,9 @@ This is what I have been studying to create the second version of my portfolio w
 
 # 1. Front-End 
 ## 1.1. Vue JS2 by Net Ninja
+Check out [1-1_Front-end_VueJS2](https://github.com/cmdlhz/study_for_ver2/tree/1-1_Front-end_VueJS2) branch for details.
+
+Also, visit [this blog post](http://bit.ly/M_VueJS2_NN) to see the result of the blog exercise in the tutorial.
 
 ## 1.2. Vuex by Net Ninja
 
@@ -43,10 +46,10 @@ This is what I have been studying to create the second version of my portfolio w
     - 1.4.2. [JavaScript ES6-ES8 [Part 2 of 2]](http://bit.ly/M_JS_ES6-8_2_CT) on April 10, 2019.
     - 1.5. [Regular Expressions — Programming with Text](http://bit.ly/M_JS_Regex_CT) on April 11, 2019.
     - 1.6. [Vue CLI3](http://bit.ly/M_Vue_CLI3_NN) on April 12, 2019.
+    - 1.7. [Vue JS2 by Net Ninja](http://bit.ly/M_VueJS2_NN) on April 14, 2019.
 2. <b>Project Weekly Report</b>
     - 2.1. [Plans to get a job as a front-end developer by the end of 2019](http://bit.ly/week_0_goals) on April 4, 2019.
-
-
+    - 2.2. [Portfolio Project Week 1 Report](http://bit.ly/M_p_v2_wk_1) on April 12, 2019.
 - - -
 
 # 4. Contributing
