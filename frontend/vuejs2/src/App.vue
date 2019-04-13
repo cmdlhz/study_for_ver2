@@ -1,47 +1,33 @@
 <template>
   <div>
-    <app-header :title="title" @changeTitle="updatedTitle($event)"></app-header>
-    <app-ninjas :ninjas="ninjas"></app-ninjas>
-    <hr>
-    <app-ninjas :ninjas="ninjas"></app-ninjas>
-    <app-footer :title="title"></app-footer>
+    <keep-alive>
+      <component :is="component"></component>
+    </keep-alive>
+    <button @click="component = 'form-one'">Show Form 1</button>
+    <button @click="component = 'form-two'">Show Form 2</button>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Ninjas from './components/Ninjas.vue';
-import Footer from './components/Footer.vue';
+import formOne from './components/FormOne.vue';
+import formTwo from './components/FormTwo.vue';
 
 export default {
   components:{
-    'app-header': Header,
-    'app-ninjas': Ninjas,
-    'app-footer': Footer
+    'form-one': formOne,
+    'form-two': formTwo
   },
   data(){
     return{
-      ninjas: [
-        {name: 'Ryu', speciality: 'Vue Components', show: false},
-        {name: 'Crystal', speciality: 'HTML Wizardry', show: false},
-        {name: 'Hitoshi', speciality: 'Click Events', show: false},
-        {name: 'Tango', speciality: 'Conditionals', show: false},
-        {name: 'Kami', speciality: 'Webpack', show: false},
-        {name: 'Yoshi', speciality: 'Data Diggin', show: false}
-      ],
-      title: "Vue Ninjas"
+      component: 'form-one'
     }
   },
   methods:{
-    updatedTitle: function(updatedTitle){
-      this.title = updatedTitle;
-    }
+
   }
 }
 </script>
 
 <style scoped>
-h1{
-  color: purple;
-}
+
 </style>
