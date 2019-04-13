@@ -56,13 +56,10 @@ export default {
   methods:{
     post: function(){
       const axios = require('axios');
-      axios.post('https://jsonplaceholder.typicode.com/posts', {
-        title: this.blog.title,
-        body: this.blog.content,
-        userID: 1
-      }).then(response => {
-        console.log(response);
-        this.submitted = true;
+      axios.post('https://nn-vuejs2-playlist.firebaseio.com/posts.json', this.blog)
+        .then(response => {
+          console.log(response);
+          this.submitted = true;
       });
     }
   }
