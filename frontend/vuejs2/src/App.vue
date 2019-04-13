@@ -1,31 +1,25 @@
 <template>
   <div>
-    <form-helper>
-      <div slot="form-header">
-        <h3>This is the title</h3>
-        <p>Info of the form</p>
-      </div>
-      <div slot="form-fields">
-        <input type="text" placeholder="name" required>
-        <input type="password" placeholder="password" required>
-      </div>
-      <div slot="form-controls">
-        <button @click="handleSubmit">SUBMIT</button>
-      </div>
-    </form-helper>
+    <keep-alive>
+      <component :is="component"></component>
+    </keep-alive>
+    <button @click="component = 'form-one'">Show Form 1</button>
+    <button @click="component = 'form-two'">Show Form 2</button>
   </div>
 </template>
 
 <script>
-import formHelper from './components/FormHelper.vue';
+import formOne from './components/FormOne.vue';
+import formTwo from './components/FormTwo.vue';
 
 export default {
   components:{
-    'form-helper': formHelper
+    'form-one': formOne,
+    'form-two': formTwo
   },
   data(){
     return{
-      title: "I'm a dynamic title."
+      component: 'form-one'
     }
   },
   methods:{
@@ -35,7 +29,5 @@ export default {
 </script>
 
 <style scoped>
-h1{
-  color: purple;
-}
+
 </style>
