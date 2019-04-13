@@ -1,33 +1,30 @@
 <template>
-  <div>
-    <keep-alive>
-      <component :is="component"></component>
-    </keep-alive>
-    <button @click="component = 'form-one'">Show Form 1</button>
-    <button @click="component = 'form-two'">Show Form 2</button>
+  <div id="app">
+    <app-header></app-header>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import formOne from './components/FormOne.vue';
-import formTwo from './components/FormTwo.vue';
+import addBlog from './components/AddBlog.vue';	
+import showBlogs from './components/ShowBlogs.vue';
+import listBlogs from './components/ListBlogs.vue';
+import header from './components/Header.vue';
 
-export default {
+export default {	
   components:{
-    'form-one': formOne,
-    'form-two': formTwo
-  },
-  data(){
-    return{
-      component: 'form-one'
-    }
-  },
-  methods:{
+    'add-blogs': addBlog,
+    'show-blogs': showBlogs,	    
+    'list-blogs': listBlogs,
+    'app-header': header
+  }	  
+}	
+</script>	
 
-  }
-}
-</script>
 
 <style scoped>
-
+body{
+  margin: 0;
+  font-family: 'Nunito SemiBold';
+}
 </style>
