@@ -41,10 +41,6 @@
 
 <script>
 export default {
-  components:{
-    'add-blog': addBlog,
-    'show-blogs': showBlogs
-  },
   data(){
     return{
       blog: {

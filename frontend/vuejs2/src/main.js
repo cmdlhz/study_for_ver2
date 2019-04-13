@@ -1,6 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 import axios from 'axios'
+import VueRouter from 'vue-router'
+import Routes from './router'
+
+Vue.prototype.$http = axios;
+Vue.use(VueRouter);
+
+const router = new VueRouter({
+  routes : Routes  
+});
 
 Vue.config.productionTip = false
 Vue.prototype.$http = axios;
@@ -28,4 +37,5 @@ Vue.directive('theme', {
 
 new Vue({
   render: h => h(App),
+  router: router
 }).$mount('#app')
