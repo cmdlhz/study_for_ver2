@@ -1,18 +1,16 @@
 <template>
   <div v-theme:column="'narrow'" id="show-blogs">
-    <h1>All Blog Articles</h1>
+    <h1>List Blog Titles</h1>
     <input type="text" v-model="search" placeholder="SEARCH Blogs :)">
     <div v-for="blog in filteredBlogs" :key="blog.id" class="single-blog">
       <h2 v-rainbow>{{ blog.title | toUppercase }}</h2>
-      <article>{{ blog.body | snippet }}</article>
     </div>
   </div>
 </template>
 
-<script>
+ <script>
 import searchMixin from "../mixins/searchMixin";
-
-export default {
+ export default {
   data(){
     return{
       blogs: [],
@@ -20,8 +18,7 @@ export default {
     }
   },
   methods:{
-
-  },
+   },
   created(){
     const axios = require('axios');
     axios.get('https://jsonplaceholder.typicode.com/posts')
@@ -31,8 +28,7 @@ export default {
     });
   },
   computed:{
-    
-  },
+   },
   filters: {
     toUppercase: value => value.toUpperCase(),
     snippet: value => value.slice(0,100) + '...'
@@ -48,7 +44,7 @@ export default {
 }
 </script>
 
-<style scoped>
+ <style scoped>
 #show-blogs{
   max-width: 800px;
   margin: 0 auto;
