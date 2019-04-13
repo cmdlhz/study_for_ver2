@@ -1,41 +1,35 @@
 <template>
   <div>
-    <app-header :title="title" @changeTitle="updatedTitle($event)"></app-header>
-    <app-ninjas :ninjas="ninjas"></app-ninjas>
-    <hr>
-    <app-ninjas :ninjas="ninjas"></app-ninjas>
-    <app-footer :title="title"></app-footer>
+    <form-helper>
+      <div slot="form-header">
+        <h3>This is the title</h3>
+        <p>Info of the form</p>
+      </div>
+      <div slot="form-fields">
+        <input type="text" placeholder="name" required>
+        <input type="password" placeholder="password" required>
+      </div>
+      <div slot="form-controls">
+        <button @click="handleSubmit">SUBMIT</button>
+      </div>
+    </form-helper>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Ninjas from './components/Ninjas.vue';
-import Footer from './components/Footer.vue';
+import formHelper from './components/FormHelper.vue';
 
 export default {
   components:{
-    'app-header': Header,
-    'app-ninjas': Ninjas,
-    'app-footer': Footer
+    'form-helper': formHelper
   },
   data(){
     return{
-      ninjas: [
-        {name: 'Ryu', speciality: 'Vue Components', show: false},
-        {name: 'Crystal', speciality: 'HTML Wizardry', show: false},
-        {name: 'Hitoshi', speciality: 'Click Events', show: false},
-        {name: 'Tango', speciality: 'Conditionals', show: false},
-        {name: 'Kami', speciality: 'Webpack', show: false},
-        {name: 'Yoshi', speciality: 'Data Diggin', show: false}
-      ],
-      title: "Vue Ninjas"
+      title: "I'm a dynamic title."
     }
   },
   methods:{
-    updatedTitle: function(updatedTitle){
-      this.title = updatedTitle;
-    }
+
   }
 }
 </script>
