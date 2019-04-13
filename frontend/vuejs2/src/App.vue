@@ -1,7 +1,7 @@
 <template>
   <div id="add-blog">
     <h2>Add a New Blog Post</h2>
-    <form>
+    <form v-if="!submitted">
       <label>Blog Title:</label>
       <input type="text" v-model.lazy="blog.title" required>
       <label>Blog Content:</label>
@@ -18,9 +18,13 @@
       </div>
       <label>Author: </label>
       <select v-model="blog.author">
-        <option v-for="author in authors" :key="author">{{ author }}</option>
+        <option v-for="author in authors" :key="author.id">{{ author }}</option>
       </select>
+      <button @click.prevent="post">Add Blog</button>
     </form>
+    <div v-if="submitted">
+      <h3>Thanks for adding your post! :)</h3>
+    </div>
     <div id="preview">
       <h3>PREVIEW</h3>
       <p>Blog Title: {{ blog.title }}</p>
@@ -28,7 +32,7 @@
       <p>{{ blog.content }}</p>
       <p>Blog Categories: </p>
       <ul>
-        <li v-for="category in blog.categories" :key="category">{{ category }}</li>
+        <li v-for="category in blog.categories" :key="category.id">{{ category }}</li>
       </ul>
       <p>Author: {{ blog.author }}</p>
     </div>
@@ -50,11 +54,22 @@ export default {
         author: "",
         categories: []
       },
-      authors: ['Jane', 'Kate', 'Sam']
+      authors: ['Jane', 'Kate', 'Sam'],
+      submitted: false
     }
   },
   methods:{
-
+    post: function(){
+      const axios = require('axios');
+      axios.post('https://jsonplaceholder.typicode.com/posts', {
+        title: this.blog.title,
+        body: this.blog.content,
+        userID: 1
+      }).then(response => {
+        console.log(response);
+        this.submitted = true;
+      });
+    }
   }
 }
 </script>
