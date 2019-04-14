@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <h1>Homepage</h1>
+    <v-btn class="hidden-xs-only">SMALL AND UP</v-btn>
+    <v-btn class="hidden-sm-and-up">XS ONLY</v-btn>
   </div>
 </template>
 
