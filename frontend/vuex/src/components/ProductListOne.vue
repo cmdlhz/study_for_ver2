@@ -2,17 +2,33 @@
   <div id="product-list-one">
     <h2>Product List One</h2>
     <ul>
-      <li v-for="product in products" :key="product.id">
+      <li v-for="product in saleProducts" :key="product.id">
         <span class="name">{{ product.name }}</span>
-        <span class="price">{{ product.price }}</span>
+        <span class="price">${{ product.price }}</span>
       </li>
     </ul>
+    <button @click="reducePrice(4)">REDUCE PRICE</button>
   </div>
 </template>
 
 <script>
+  import {mapActions} from 'vuex';
+  import {mapGetters} from 'vuex';
+
   export default {
-    props: ['products']
+    computed:{
+      products(){
+        return this.$store.state.products
+      },
+      ...mapGetters([
+        'saleProducts'
+      ])
+    },
+    methods:{
+      ...mapActions([
+        'reducePrice'
+      ])
+    }
   }
 </script>
 
