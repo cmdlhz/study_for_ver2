@@ -7,6 +7,7 @@
         <span class="price">${{ product.price }}</span>
       </li>
     </ul>
+    <button @click="reducePrice">REDUCE PRICE</button>
   </div>
 </template>
 
@@ -18,6 +19,21 @@
       },
       saleProducts(){
         return this.$store.getters.saleProducts
+      }
+    },
+    methods:{
+      reducePrice: function(){
+        /*
+          can NOT track changes in VueJS Devtools
+        */
+        // this.$store.state.products.forEach(product => {
+        //   product.price -= 1;
+        // })
+        
+        /*
+          can track changes in VueJS Devtools
+        */
+        this.$store.commit('reducePrice');
       }
     }
   }
