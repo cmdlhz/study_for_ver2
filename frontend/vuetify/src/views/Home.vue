@@ -1,15 +1,28 @@
 <template>
   <div class="home">
     <h1>Homepage</h1>
-    <p class="blue darken-4 white--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet iusto tempora esse neque tempore! Dolorum officiis, est explicabo omnis nihil esse vitae voluptas excepturi suscipit. Sint officiis quis laudantium.</p>
-    <p class="light-green lighten-3 green--text text--darken-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet iusto tempora esse neque tempore! Dolorum officiis, est explicabo omnis nihil esse vitae voluptas excepturi suscipit. Sint officiis quis laudantium.</p>
+    <v-btn class="blue lighten-1 white--text">CLICK ME</v-btn>
+    <v-btn depressed color="blue lighten-1">CLICK ME</v-btn>
+    <v-btn flat color="blue lighten-1">CLICK ME</v-btn>
 
-    <h1 class="display-4">Massive TEXT</h1>
-    <h4 class="display-1">Smaller TEXT</h4>
-
-    <p class="headline">This is a headline.</p>
-    <p class="subheading font-weight-bold">This is a subheading.</p>
-    <p class="caption">This is a caption.</p>
+    <v-btn depressed class="blue lighten-1 white--text">
+      <v-icon left>email</v-icon>
+      <span>EMAIL ME</span>
+    </v-btn>
+    <v-btn depressed small class="blue lighten-1 white--text">
+      <v-icon left small>email</v-icon>
+      <span>EMAIL ME</span>
+    </v-btn>
+    <v-btn large class="blue lighten-1 white--text">
+      <span>EMAIL ME</span>
+      <v-icon right large>email</v-icon>
+    </v-btn>
+    <v-btn fab depressed small dark color="red darken-1">
+      <v-icon>favorite</v-icon>
+    </v-btn>
+    <v-btn fab small dark color="red darken-1">
+      <v-icon>favorite</v-icon>
+    </v-btn>
   </div>
 </template>
 
