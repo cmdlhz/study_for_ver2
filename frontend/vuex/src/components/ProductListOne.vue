@@ -7,7 +7,7 @@
         <span class="price">${{ product.price }}</span>
       </li>
     </ul>
-    <button @click="reducePrice">REDUCE PRICE</button>
+    <button @click="reducePrice(4)">REDUCE PRICE</button>
   </div>
 </template>
 
@@ -22,7 +22,7 @@
       }
     },
     methods:{
-      reducePrice: function(){
+      reducePrice: function(amount){
         /*
           can NOT track changes in VueJS Devtools
         */
@@ -33,7 +33,8 @@
         /*
           can track changes in VueJS Devtools
         */
-        this.$store.commit('reducePrice');
+        // this.$store.commit('reducePrice');
+        this.$store.dispatch('reducePrice', amount)
       }
     }
   }
