@@ -36,6 +36,7 @@ Also, please visit [this blog post](http://bit.ly/M_Vuex_CSM_NN) to see the resu
 
 Check out the [Vuetify folder](https://github.com/cmdlhz/study_for_ver2/tree/master/frontend/vuetify) for details.
 
+
 - - -
 
 # 2. Back-End 
