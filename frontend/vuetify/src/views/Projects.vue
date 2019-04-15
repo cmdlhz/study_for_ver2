@@ -1,6 +1,11 @@
 <template>
   <div class="projects">
-    <h1>Projects</h1>
+    <h1 class="subheading grey--text">Projects</h1>
+    <!-- Add "fluid" full width / smaller margins -->
+    <v-container class="my-5">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laudantium, dolores debitis ad in voluptate temporibus ratione qui incidunt sequi nemo et doloribus ut porro dolore blanditiis veritatis quidem ducimus.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam laudantium, dolores debitis ad in voluptate temporibus ratione qui incidunt sequi nemo et doloribus ut porro dolore blanditiis veritatis quidem ducimus.</p>
+    </v-container>
   </div>
 </template>
 
