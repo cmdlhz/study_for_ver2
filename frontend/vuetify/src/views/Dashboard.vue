@@ -3,29 +3,26 @@
     <h1 class="subheading grey--text">Dashboard</h1>
     <!-- Add "fluid" full width / smaller margins -->
     <v-container class="my-5">
-      <v-layout row wrap>
-        <v-flex xs12 md6>
-          <v-btn outline block class="primary">ONE</v-btn>
-        </v-flex>
-        <v-flex xs4 md2>
-          <v-btn outline block class="primary">TWO</v-btn>
-        </v-flex>
-        <v-flex xs4 md2>
-          <v-btn outline block class="primary">THREE</v-btn>
-        </v-flex>
-        <v-flex xs4 md2>
-          <v-btn outline block class="primary">FOUR</v-btn>
-        </v-flex>
-      </v-layout>
-
-      <v-layout row wrap justify-space-around>
-        <v-flex xs4 md3>
-          <v-btn outline block class="success">FIVE</v-btn>
-        </v-flex>
-        <v-flex xs4 md3>
-          <v-btn outline block class="success">SIX</v-btn>
-        </v-flex>
-      </v-layout>
+      <v-card flat class="pa-3">
+        <v-layout row wrap>
+          <v-flex xs12 md6>
+            <div class="caption grey--text">PROJECT TITLE</div>
+            <div>Create a new website.</div>
+          </v-flex>
+          <v-flex xs6 sm4 md2>
+            <div class="caption grey--text">PERSON</div>
+            <div>Jen Lim</div>
+          </v-flex>
+          <v-flex xs6 sm4 md2>
+            <div class="caption grey--text">DUE DATE</div>
+            <div>2019/7/31</div>
+          </v-flex>
+          <v-flex xs2 sm4 md2>
+            <div class="caption grey--text">STATUS</div>
+            <div>ongoing</div>
+          </v-flex>
+        </v-layout>
+      </v-card>
     </v-container>
   </div>
 </template>
