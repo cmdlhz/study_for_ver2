@@ -18,19 +18,23 @@ This is what I have been studying to create the second version of my portfolio w
 
 # 1. Front-End 
 ## 1.1. Vue JS2 by Net Ninja
-Check out [1-1_Front-end_VueJS2](https://github.com/cmdlhz/study_for_ver2/tree/1-1_Front-end_VueJS2) branch for details.
+[VueJS](https://vuejs.org/) is a progressive JavaScript framework.
 
-Also, visit [this blog post](http://bit.ly/M_VueJS2_NN) to see the result of the blog exercise in the tutorial.
+Check out the [VueJS folder](https://github.com/cmdlhz/study_for_ver2/tree/master/frontend/vuejs2) for details.
+
+Also, please visit [this blog post](http://bit.ly/M_VueJS2_NN) to see the result of the blog exercise in the tutorial.
 
 ## 1.2. Vuex by Net Ninja
-Vuex is the centralized state management pattern & library for Vue.
+[Vuex](https://vuex.vuejs.org/) is the centralized state management pattern & library for Vue.
 
-Check out [1-2_Front-end_Vuex](https://github.com/cmdlhz/study_for_ver2/tree/1-2_Front-end_Vuex) branch for details.
+Check out the [Vuex folder](https://github.com/cmdlhz/study_for_ver2/tree/master/frontend/vuex) for details.
 
-Also, visit [this blog post](http://bit.ly/M_Vuex_CSM_NN) to see the result of the blog exercise in the tutorial.
+Also, please visit [this blog post](http://bit.ly/M_Vuex_CSM_NN) to see the result of the blog exercise in the tutorial.
 
 ## 1.3. Vuetify by Net Ninja
+[Vuetify](https://next.vuetifyjs.com/en/) is Material Design component framework specifically for [VueJS](https://vuejs.org/).
 
+Check out the [Vuetify folder](https://github.com/cmdlhz/study_for_ver2/tree/master/frontend/vuetify) for details.
 
 - - -
 
@@ -52,6 +56,9 @@ Also, visit [this blog post](http://bit.ly/M_Vuex_CSM_NN) to see the result of t
     - 1.5. [Regular Expressions — Programming with Text](http://bit.ly/M_JS_Regex_CT) on April 11, 2019.
     - 1.6. [Vue CLI3](http://bit.ly/M_Vue_CLI3_NN) on April 12, 2019.
     - 1.7. [Vue JS2 by Net Ninja](http://bit.ly/M_VueJS2_NN) on April 14, 2019.
+    - 1.8. [Vuex by Net Ninja](http://bit.ly/M_Vuex_CSM_NN) on April 14, 2019.
+    - 1.9.1. [Vuetify by Net Ninja [Part 1 of 3]](http://bit.ly/M_Vuetify_1_of_3_NN) on April 15, 2019.
+    - 1.9.2. [Vuetify by Net Ninja [Part 2 of 3]](http://bit.ly/M_Vuetify_2_of_3_NN) on April 15, 2019.
 2. <b>Project Weekly Report</b>
     - 2.1. [Plans to get a job as a front-end developer by the end of 2019](http://bit.ly/week_0_goals) on April 4, 2019.
     - 2.2. [Portfolio Project Week 1 Report](http://bit.ly/M_p_v2_wk_1) on April 12, 2019.

@@ -1,21 +1,5 @@
 # vuex
 
-## Project setup
-```
-npm install
-```
+[Vuex](https://vuex.vuejs.org/) is the centralized state management pattern & library for Vue.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+Please visit [this blog post](http://bit.ly/M_Vuex_CSM_NN) to see the result of the blog exercise in the tutorial.
