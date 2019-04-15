@@ -4,14 +4,20 @@
     <!-- Add "fluid" full width / smaller margins -->
     <v-container class="my-5">
       <v-layout row class="mb-3">
-        <v-btn small flat color="grey" @click="sortBy('title')">
-          <v-icon left small>folder</v-icon>
-          <span class="caption text-uppercase">By Project Title</span>
-        </v-btn>
-        <v-btn small flat color="grey" @click="sortBy('person')">
-          <v-icon left small>person</v-icon>
-          <span class="caption text-uppercase">By Person</span>
-        </v-btn>
+        <v-tooltip top>
+          <v-btn small flat color="grey" @click="sortBy('title')" slot="activator">
+            <v-icon left small>folder</v-icon>
+            <span class="caption text-uppercase">By Project Name</span>
+          </v-btn>
+          <span>Sort Projects by Project Name</span>
+        </v-tooltip>
+        <v-tooltip top>
+          <v-btn small flat color="grey" @click="sortBy('person')" slot="activator">
+            <v-icon left small>person</v-icon>
+            <span class="caption text-uppercase">By Person</span>
+          </v-btn>
+          <span>Sort Projects by Person</span>
+        </v-tooltip>
       </v-layout>
 
       <v-card flat v-for="project in projects" :key="project.title">
