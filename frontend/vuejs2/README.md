@@ -1,21 +1,5 @@
 # vuejs2
 
-## Project setup
-```
-npm install
-```
+[VueJS](https://vuejs.org/) is a progressive JavaScript framework.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+Please visit [this blog post](http://bit.ly/M_VueJS2_NN) to see the result of the blog exercise in the tutorial.
