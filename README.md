@@ -20,21 +20,22 @@ This is what I have been studying to create the second version of my portfolio w
 ## 1.1. Vue JS2 by Net Ninja
 [VueJS](https://vuejs.org/) is a progressive JavaScript framework.
 
-Check out [1-1_Front-end_VueJS2](https://github.com/cmdlhz/study_for_ver2/tree/1-1_Front-end_VueJS2) branch for details.
+Check out the [VueJS folder](https://github.com/cmdlhz/study_for_ver2/tree/master/frontend/vuejs2) for details.
 
-Also, visit [this blog post](http://bit.ly/M_VueJS2_NN) to see the result of the blog exercise in the tutorial.
+Also, please visit [this blog post](http://bit.ly/M_VueJS2_NN) to see the result of the blog exercise in the tutorial.
 
 ## 1.2. Vuex by Net Ninja
 [Vuex](https://vuex.vuejs.org/) is the centralized state management pattern & library for Vue.
 
-Check out [1-2_Front-end_Vuex](https://github.com/cmdlhz/study_for_ver2/tree/1-2_Front-end_Vuex) branch for details.
+Check out the [Vuex folder](https://github.com/cmdlhz/study_for_ver2/tree/master/frontend/vuex) for details.
 
-Also, visit [this blog post](http://bit.ly/M_Vuex_CSM_NN) to see the result of the blog exercise in the tutorial.
+Also, please visit [this blog post](http://bit.ly/M_Vuex_CSM_NN) to see the result of the blog exercise in the tutorial.
 
 ## 1.3. Vuetify by Net Ninja
 [Vuetify](https://next.vuetifyjs.com/en/) is Material Design component framework specifically for [VueJS](https://vuejs.org/).
 
-Check out [1-3_Front-end_Vuetify](https://github.com/cmdlhz/study_for_ver2/tree/1-3_Front-end_Vuetify) branch for details.
+Check out the [Vuetify folder](https://github.com/cmdlhz/study_for_ver2/tree/master/frontend/vuetify) for details.
+
 
 - - -
 
