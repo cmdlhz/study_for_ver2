@@ -64,7 +64,7 @@
           db.collection('projects').add(project).then(() => {
             this.loading = false;
             this.dialog = false;
-            alert('You\'ve successfully submitted a form!');
+            this.$emit('projectAdded');
           })
         } else {
           alert('The form can\'t be submitted until all fields are filled out.')
