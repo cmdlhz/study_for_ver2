@@ -33,11 +33,14 @@
       <v-layout column align-center>
         <v-flex class="mt-5">
           <v-avatar size="100">
-            <img src="/avatar-1.png">
+            <img src="avatars/avatar-1.png">
           </v-avatar>
           <p class="white--text subheading mt-1 text-xs-center">
             Jen Lim
           </p>
+        </v-flex>
+        <v-flex class="mt-4 mb-3">
+          <Popup />
         </v-flex>
       </v-layout>
       
@@ -56,7 +59,12 @@
 </template>
 
 <script>
+  import Popup from './Popup'
+
   export default {
+    components: {
+      Popup
+    },
     data(){
       return{
         drawer: false,
