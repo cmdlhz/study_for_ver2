@@ -26,7 +26,6 @@
 
 <script>
   import format from 'date-fns/format'
-  import db from '@/fb'
 
   export default {
     data(){
@@ -50,16 +49,7 @@
     methods:{
       submit(){
         if(this.$refs.form.validate()){
-          const project = {
-            title: this.title,
-            content: this.content,
-            due: format(this.due, 'MMM D, YYYY'),
-            person: 'Jen Lim',
-            status: 'ongoing'
-          }
-          db.collection('projects').add(project).then(() => {
-            alert('You\'ve successfully submitted a form!')
-          })
+          alert('You\'ve successfully sumbitted a form!')
         } else {
           alert('The form can\'t be submitted until all fields are filled out.')
         }
