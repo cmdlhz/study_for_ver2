@@ -6,12 +6,12 @@
         <h2>Add a New Project</h2>
       </v-card-title>
       <v-card-text>
-        <v-form class="px-3">
-          <v-text-field label="title" v-model="title" prepend-icon="folder"></v-text-field>
-          <v-textarea label="information" v-model="content" prepend-icon="edit"></v-textarea>
+        <v-form class="px-3" ref="form">
+          <v-text-field label="title" v-model="title" prepend-icon="folder" :rules="titleRules"></v-text-field>
+          <v-textarea label="information" v-model="content" prepend-icon="edit" :rules="contentRules"></v-textarea>
 
           <v-menu>
-            <v-text-field :value="formattedDate" slot="activator" label="Due date" prepend-icon="date_range"></v-text-field>
+            <v-text-field :value="formattedDate" slot="activator" label="Due date" prepend-icon="date_range" :rules="dateRules"></v-text-field>
             <v-date-picker v-model="due"></v-date-picker>
           </v-menu>
 
@@ -32,12 +32,27 @@
       return{
         title: '', 
         content: '',
-        due: null
+        due: null,
+        titleRules: [
+          v => !!v || 'This field is required. Please write a title.',
+          v => v.length >= 3 || 'The minimum length is 3 characters'
+        ],
+        contentRules: [
+          v => !!v || 'This field is required. Please add information.',
+          v => v.length >= 10 || 'The minimum length is 10 characters'
+        ],
+        dateRules: [
+          v => !!v || 'This field is required. Please select a date.',
+        ]
       }
     },
     methods:{
       submit(){
-        console.log(this.title, this.content)
+        if(this.$refs.form.validate()){
+          alert('You\'ve successfully sumbitted a form!')
+        } else {
+          alert('The form can\'t be submitted until all fields are filled out.')
+        }
       }
     },
     computed:{
