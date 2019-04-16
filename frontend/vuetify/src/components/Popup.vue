@@ -1,5 +1,5 @@
 <template>
-  <v-dialog max-width="600px">
+  <v-dialog max-width="600px" v-model="dialog">
     <v-btn flat slot="activator" class="success">Add a new project</v-btn>
     <v-card>
       <v-card-title>
@@ -17,7 +17,7 @@
 
           <v-spacer></v-spacer>
 
-          <v-btn flat class="success mx-0 mt-3" @click="submit">Add this project</v-btn>
+          <v-btn flat class="success mx-0 mt-3" @click="submit" :loading='loading'>Add this project</v-btn>
         </v-form>
       </v-card-text>
     </v-card>
@@ -44,13 +44,17 @@
         ],
         dateRules: [
           v => !!v || 'This field is required. Please select a date.',
-        ]
+        ],
+        loading: false,
+        dialog: false
       }
     },
     methods:{
       submit(){
         if(this.$refs.form.validate()){
-          const project = {
+          this.loading = true;
+
+          const project = { 
             title: this.title,
             content: this.content,
             due: format(this.due, 'MMM D, YYYY'),
@@ -58,7 +62,9 @@
             status: 'ongoing'
           }
           db.collection('projects').add(project).then(() => {
-            alert('You\'ve successfully submitted a form!')
+            this.loading = false;
+            this.dialog = false;
+            alert('You\'ve successfully submitted a form!');
           })
         } else {
           alert('The form can\'t be submitted until all fields are filled out.')
