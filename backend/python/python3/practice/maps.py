@@ -9,9 +9,9 @@ def jumble(word):
   return ''.join(anagram)
 
 words = ['yellow', 'blue', 'green']
-anagrams = []
 
 ## for loop
+anagrams = []
 for word in words:
   anagrams.append(jumble(word))
 print(anagrams)
