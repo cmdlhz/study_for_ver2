@@ -30,7 +30,7 @@ Also, please visit [this blog post](http://bit.ly/M_VueJS2_NN) to see the result
 
 Check out the [Vuex folder](https://github.com/cmdlhz/study_for_ver2/tree/master/frontend/vuex) for details.
 
-Also, please visit [this blog post](http://bit.ly/M_Vuex_CSM_NN) to see the result of the blog exercise in the tutorial.
+Also, please visit [this blog post](http://bit.ly/M_Vuex_CSM_NN) to see the result of the exercise in the tutorial.
 
 ## 1.3. Vuetify by Net Ninja
 [Vuetify](https://next.vuetifyjs.com/en/) is Material Design component framework specifically for [VueJS](https://vuejs.org/).
@@ -43,6 +43,11 @@ Also, please visit following blog posts to read my detailed summary of the tutor
 
 # 2. Back-End 
 ## 2.1. Python3 by Net Ninja
+[Python](https://vuejs.org/) is a programming language that lets people work quickly and integrate systems more effectively.
+
+Check out the [Python3 folder](https://github.com/cmdlhz/study_for_ver2/tree/master/backend/python/python3) for details.
+
+Also, please visit [this blog post](http://bit.ly/M_Python3_NN) to see my detailed summary of the tutorial.
 
 ## 2.2. Django by Net Ninja
 
@@ -68,6 +73,7 @@ Also, please visit following blog posts to read my detailed summary of the tutor
     - 1.9.1. [Vuetify by Net Ninja [Part 1 of 3]](http://bit.ly/M_Vuetify_1_of_3_NN) on April 15, 2019.
     - 1.9.2. [Vuetify by Net Ninja [Part 2 of 3]](http://bit.ly/M_Vuetify_2_of_3_NN) on April 15, 2019.
     - 1.9.3. [Vuetify by Net Ninja [Part 3 of 3]](http://bit.ly/M_Vuetify_3_of_3_NN) on April 16, 2019.
+    - 2.1. [Python3 by Net Ninja](http://bit.ly/M_Python3_NN) on April 23, 2019.
 2. <b>Project Weekly Report</b>
     - 2.1. [Plans to get a job as a front-end developer by the end of 2019](http://bit.ly/week_0_goals) on April 4, 2019.
     - 2.2. [Portfolio Project Week 1 Report](http://bit.ly/M_p_v2_wk_1) on April 12, 2019.
