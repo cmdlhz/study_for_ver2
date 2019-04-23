@@ -38,7 +38,8 @@ INSTALLED_APPS = [
 	'django.contrib.messages',
 	'django.contrib.staticfiles',
 	# Add "articles" app
-	'articles'
+	'articles',
+	'accounts'
 ]
 
 MIDDLEWARE = [
