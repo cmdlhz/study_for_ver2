@@ -51,6 +51,9 @@ Also, please visit [this blog post](http://bit.ly/M_Python3_NN) to see my detail
 
 ## 2.2. Django by Net Ninja
 
+
+By the way, do not store images in Django for creating a website for production. That's very inefficient.
+
 ## 2.3. Python/Django by Imagineer
 - - -
 
