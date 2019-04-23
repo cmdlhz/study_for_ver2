@@ -45,7 +45,7 @@ Also, please visit following blog posts to read my detailed summary of the tutor
 ## 2.1. Python3 by Net Ninja
 [Python](https://vuejs.org/) is a programming language that lets people work quickly and integrate systems more effectively.
 
-Check out the [Python3 folder](https://github.com/cmdlhz/study_for_ver2/tree/master/backend/python/python3) for details.
+Check out the [Python3 folder](https://github.com/cmdlhz/study_for_ver2/tree/master/backend/python3) for details.
 
 Also, please visit [this blog post](http://bit.ly/M_Python3_NN) to see my detailed summary of the tutorial.
 
