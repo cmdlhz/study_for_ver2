@@ -25,7 +25,7 @@ Check out the [VueJS folder](https://github.com/cmdlhz/study_for_ver2/tree/maste
 
 Also, please visit [this blog post](http://bit.ly/M_VueJS2_NN) to see the result of the blog exercise in the tutorial.
 
-To run a development server, run `npm install` & `npm run serve` in terminal.
+To run a server, run `npm install` & `npm run serve` in terminal.
 
 ## 1.2. Vuex by Net Ninja
 [Vuex](https://vuex.vuejs.org/) is the centralized state management pattern & library for Vue.
@@ -56,7 +56,7 @@ Also, please visit [this blog post](http://bit.ly/M_Python3_NN) to see my detail
 
 By the way, do not store images in Django for creating a website for production. That's very inefficient.
 
-To run a development server, run `python manage.py runserver` in terminal.
+To run a server, run `python manage.py runserver` in terminal.
 
 ## 2.3. Python/Django by Imagineer
 - - -
