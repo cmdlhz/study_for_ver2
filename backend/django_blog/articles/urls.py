@@ -1,6 +1,7 @@
-from django.urls import include, re_path
+from django.urls import include, path
 from . import views
 
 urlpatterns = [
-  re_path(r'^$', views.article_list),
+  path('', views.article_list),
+  path('<slug>/', views.article_detail)
 ]
