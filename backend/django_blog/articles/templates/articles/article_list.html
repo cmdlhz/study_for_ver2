@@ -12,7 +12,8 @@
     {% for article in articles %}
       <div class="article">
         <h2><a href="#">{{ article.title }}</a></h2>
-        <p>{{ article.body }}</p>
+        <!-- Truncates a string if it is longer than the specified number of characters. -->
+        <p>{{ article.snippet | truncatechars:50 }}</p>
         <p>{{ article.date }}</p>
       </div>
     {% endfor %}
