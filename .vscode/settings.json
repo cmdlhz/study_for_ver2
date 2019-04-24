@@ -1,6 +1,6 @@
 {
     "git.ignoreLimitWarning": true,
-    "python.pythonPath": "/Users/HyejungLim/miniconda3/envs/nn_python3/bin/python",
+    "python.pythonPath": "/Users/HyejungLim/.pyenv/versions/nn_python3/bin/python",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "editor.tabSize": 2
