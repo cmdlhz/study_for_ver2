@@ -22,7 +22,12 @@ def login_view(request):
       # log in the user
       user = loginForm.get_user()
       login(request, user)
-      return redirect('articles:list')
+
+      # Redirect the user to where he/she came from
+      if 'next' in request.POST:
+        return redirect(request.POST.get('next'))
+      else:
+        return redirect('articles:list')
   else:
     loginForm = AuthenticationForm()
   return render(request, 'accounts/login.html', { 'form': loginForm })
