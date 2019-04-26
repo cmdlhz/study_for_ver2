@@ -2,8 +2,9 @@
 
 {% block content %}
 <section class="colorful">
-  <h1>Hello World, {{ name }} </h1>
-  <h1>Good Bye, {{ name }} </h1>
-  <h1>Good evening, {{ name }} </h1>
+  <h1>Hello World!</h1>
+  {% for article in article_list %}
+    {{ article.title }}
+  {% endfor %}
 </section>
 {% endblock %}
