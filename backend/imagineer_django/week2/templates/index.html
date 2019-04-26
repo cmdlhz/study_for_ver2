@@ -1,10 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<section class="colorful">
-  <h1>Hello World!</h1>
-  {% for article in article_list %}
-    {{ article.title }}
-  {% endfor %}
-</section>
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-4">
+      <section class="colorful">
+        {% for article in article_list %}
+          {{ article.title }}
+          <span class="badge badge-secondary">{{ article.view_count }}</span>
+        {% endfor %}
+      </section>
+    </div>
+    <div class="col-md-auto">
+      <h1>This is a test</h1>
+      <button type="button" class="btn btn-danger">Danger</button>
+    </div>
+  </div>
+</div>
 {% endblock %}
