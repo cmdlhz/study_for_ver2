@@ -5,20 +5,18 @@
 # 01110
 # 00100
 
-n = 5
-
-for a1 in range(1, (n+1)//2 + 1): #from row 1 to 5
-  for a2 in range((n+1)//2 - a1):
-    print("0", end = "")
-  for a3 in range((a1*2)-1):
-    print("1", end = "")
-  print()
-
-for a1 in range((n+1)//2 + 1, n + 1): #from row 6 to 9
-  for a2 in range(a1 - (n+1)//2):
-    print("0", end = "")
-  for a3 in range((n+1 - a1)*2 - 1):
-    print("1", end = "")
-  print()
-
 # https://stackoverflow.com/questions/39548099/printing-simple-diamond-pattern-in-python
+
+# i = 1 | new i = 1 - 3 = -2 | *: 5 - 4 = 1 | 00 + * + 00
+# i = 2 | new i = 2 - 3 = -1 | *: 5 - 2 = 3 | 0 + *** + 0
+# i = 3 | new i = 3 - 3 = 0  | *: 5 - 0 = 5 |    *****
+# i = 4 | new i = 4 - 3 = 1  | *: 5 - 2 = 3 | 0 + *** + 0
+# i = 5 | new i = 5 - 3 = 2  | *: 5 - 4 = 1 | 00 + * + 00
+
+num = int(input('How many lines would you like to have?: '))
+
+for i in range(1, num + 1):
+  i = i - (num//2 + 1)
+  if i < 0:
+    i = -i
+  print(" " * i + "*" * (num - i * 2) + " " * i)
