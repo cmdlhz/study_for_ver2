@@ -1,5 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<div class="blog-masthead">
+  <div class="container">
+    <nav class="blog-nav">
+      <a class="blog-nav-item active" href="#">Home</a>
+      <a class="blog-nav-item" href="#">About</a>
+    </nav>
+  </div>
+</div>
+<div class="container">
+  <div class="blog-header">
+    <h1 class="blog-title">Imagineer Blog</h1>
+    <p class="lead blog-description">The first blog created by Imagineer</p>
+  </div>
+</div>
+<div class="container">
+  {% for article in article_list %}
+  <div>{{ article.title }}</div>
+  <div>{{ article.content }}</div>
+  {% endfor %}
+</div>
 {% endblock %}

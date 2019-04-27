@@ -20,6 +20,8 @@ class Article(models.Model):
     default= DEVELOPMENT,
   )
 
+  objects = models.Manager()
+
 class Comment(models.Model):
 
   def __str__(self):
@@ -29,9 +31,13 @@ class Comment(models.Model):
   username = models.CharField(max_length=50)
   content = models.CharField(max_length=200)
 
+  objects = models.Manager()
+
 class HashTag(models.Model):
 
   def __str__(self):
     return self.name
 
   name = models.CharField(max_length=50)
+
+  objects = models.Manager()
