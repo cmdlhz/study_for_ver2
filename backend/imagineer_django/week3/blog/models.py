@@ -9,18 +9,29 @@ class Article(models.Model):
     (PERSONAL, "Personal")
   )
 
+  def __str__(self):
+    return self.title
+
   title = models.CharField(max_length=200)
   content = models.TextField()
   category = models.CharField(
     max_length=2,
-    chocies = CATEGORY_CHOICES,
+    choices = CATEGORY_CHOICES,
     default= DEVELOPMENT,
   )
 
 class Comment(models.Model):
+
+  def __str__(self):
+    return f"{self.username}'s comment of '{self.article}' : {self.content}"
+
   article = models.ForeignKey(Article, on_delete=models.CASCADE)
   username = models.CharField(max_length=50)
   content = models.CharField(max_length=200)
 
 class HashTag(models.Model):
+
+  def __str__(self):
+    return self.name
+
   name = models.CharField(max_length=50)
