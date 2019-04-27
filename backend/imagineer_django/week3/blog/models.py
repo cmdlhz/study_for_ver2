@@ -1,5 +1,14 @@
 from django.db import models
 
+class HashTag(models.Model):
+
+  def __str__(self):
+    return self.name
+
+  name = models.CharField(max_length=50)
+
+  objects = models.Manager()
+
 # Create your models here.
 class Article(models.Model):
   DEVELOPMENT = "DV"
@@ -20,7 +29,14 @@ class Article(models.Model):
     default= DEVELOPMENT,
   )
 
+  hashtag = models.ManyToManyField(HashTag)
+
   objects = models.Manager()
+
+# class ArticleHasHAsTag(models.Model):
+#   article = models.ForeignKey(Article, on_delete=models.CASCADE)
+#   hashtag = models.ForeignKey(HashTag, on_delete=models.CASCADE)
+
 
 class Comment(models.Model):
 
@@ -30,14 +46,5 @@ class Comment(models.Model):
   article = models.ForeignKey(Article, on_delete=models.CASCADE)
   username = models.CharField(max_length=50)
   content = models.CharField(max_length=200)
-
-  objects = models.Manager()
-
-class HashTag(models.Model):
-
-  def __str__(self):
-    return self.name
-
-  name = models.CharField(max_length=50)
 
   objects = models.Manager()

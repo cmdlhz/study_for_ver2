@@ -11,10 +11,10 @@
     <div class="col-sm-8">
       <div class="blog-post">
         {% for article in article_list %}
-          <h2 class="blog-post-title">
-            <a href="{{article.id}}">{{ article.title }}</a>
-          </h2>
-          <p>{{ article.content }}</p>
+        <h2 class="blog-post-title">
+          <a href="{{article.id}}">{{ article.title }}</a>
+        </h2>
+        <p>{{ article.content }}</p>
         {% endfor %}
       </div>
     </div>
@@ -24,7 +24,7 @@
         <ol class="list-unstyled">
           <li><a href="/">all</a></li>
           {% for alias, category in category_list %}
-            <li><a href="/?category={{alias}}"># {{category}}</a></li>
+          <li><a href="/?category={{alias}}"># {{category}}</a></li>
           {% endfor %}
         </ol>
       </div>
@@ -32,7 +32,7 @@
         <h4>Hashtags</h4>
         <ol class="list-unstyled">
           {% for hashtag in hashtag_list %}
-            <li># {{hashtag}}</li>
+          <li><a href="/?hashtag={{hashtag.name}}"># {{hashtag}}</a></li>
           {% endfor %}
         </ol>
       </div>

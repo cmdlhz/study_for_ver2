@@ -4,13 +4,16 @@ from .models import Article, Comment, HashTag
 # Create your views here.
 def index(request):
   category = request.GET.get('category')
-  
-  if not category:
-    article_list = Article.objects.all()
-  else:
-    article_list = Article.objects.filter(category=category)
+  hashtag = request.GET.get('hashtag')
   
   hashtag_list = HashTag.objects.all()
+
+  if not category and not hashtag:
+    article_list = Article.objects.all()
+  elif category:
+    article_list = Article.objects.filter(category=category)
+  else:
+    article_list = Article.objects.filter(hashtag__name=hashtag)
 
   category_list = set([
     (article.category, article.get_category_display())
