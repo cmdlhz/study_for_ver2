@@ -41,6 +41,17 @@ def detail(request, article_id):
     'comment_list' : comment_list,
     'hashtag_list' : hashtag_list,
   }
+  if request.method == 'GET':
+    pass
+  elif request.method == 'POST':
+    username = request.POST.get('username')
+    content = request.POST.get('content')
+    Comment.objects.create(
+      article = article,
+      username = username,
+      content = content
+    )
+    return HttpResponseRedirect(f'/{article_id}/')
   return render(request, 'detail.html', ctx)
 
 def about(request):
