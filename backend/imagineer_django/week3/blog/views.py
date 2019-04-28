@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Article, Comment, HashTag
+from django.http import HttpResponseRedirect
 
 # Create your views here.
 def index(request):
