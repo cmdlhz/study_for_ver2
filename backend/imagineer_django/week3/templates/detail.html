@@ -13,9 +13,9 @@
       </div>
       <!-- ## Form Bring Comments Method 3 -->
       <div>
-        <!-- {% for comment in article.article_comments.all %} -->
+        {% for comment in article.article_comments.all %}
         <div>{{ comment.username }} : {{ comment.content }}</div>
-        <!-- {% endfor %} -->
+        {% endfor %}
       </div>
       <div class="commentForm">
         <form class="form-inline" method="post" action="">

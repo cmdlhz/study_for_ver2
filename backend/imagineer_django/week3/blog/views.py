@@ -34,12 +34,12 @@ def detail(request, article_id):
   # comment_list = Comment.objects.filter(article__id=article_id)
 
   ## Form Bring Comments Method 2 
-  comment_list = article.article_comments.all()
+  # comment_list = article.article_comments.all()
   hashtag_list = HashTag.objects.all()
   ctx = { 
     'article' : article,
     ## Form Bring Comments Method 2
-    'comment_list' : comment_list,
+    # 'comment_list' : comment_list,
     'hashtag_list' : hashtag_list,
   }
   if request.method == 'GET':
