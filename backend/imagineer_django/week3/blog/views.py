@@ -47,12 +47,16 @@ def detail(request, article_id):
   elif request.method == 'POST':
     username = request.POST.get('username')
     content = request.POST.get('content')
-    Comment.objects.create(
-      article = article,
-      username = username,
-      content = content
-    )
-    return HttpResponseRedirect(f'/{article_id}/')
+    if Comment.approved:
+      Comment.objects.create(
+        article = article,
+        username = username,
+        content = content
+      )
+      return HttpResponseRedirect(f'/{article_id}/')
+    else:
+      pass
+
   return render(request, 'detail.html', ctx)
 
 def about(request):
