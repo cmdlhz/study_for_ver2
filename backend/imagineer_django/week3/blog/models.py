@@ -43,7 +43,12 @@ class Comment(models.Model):
   def __str__(self):
     return f"{self.username}'s comment of '{self.article}' : {self.content}"
 
-  article = models.ForeignKey(Article, on_delete=models.CASCADE)
+  article = models.ForeignKey(
+    Article, 
+    ## Form Bring Comments Method 2 & 3
+    related_name="article_comments",
+    on_delete=models.CASCADE
+  )
   username = models.CharField(max_length=50)
   content = models.CharField(max_length=200)
 

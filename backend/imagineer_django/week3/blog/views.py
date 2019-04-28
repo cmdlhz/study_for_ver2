@@ -29,9 +29,16 @@ def index(request):
 
 def detail(request, article_id):
   article = Article.objects.get(id=article_id)
+  ## Form Bring Comments Method 1
+  # comment_list = Comment.objects.filter(article__id=article_id)
+
+  ## Form Bring Comments Method 2 
+  comment_list = article.article_comments.all()
   hashtag_list = HashTag.objects.all()
   ctx = { 
     'article' : article,
+    ## Form Bring Comments Method 2
+    'comment_list' : comment_list,
     'hashtag_list' : hashtag_list,
   }
   return render(request, 'detail.html', ctx)
