@@ -27,6 +27,13 @@
   font-weight: normal;
 }
 
+.blog-subtitle{
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: normal;
+  color:lightcoral;
+}
+
 .blog-description{
   font-size: 20px;
   color: #999;
