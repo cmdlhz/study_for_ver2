@@ -67,26 +67,20 @@ To run a server, run `python manage.py runserver` in terminal.
 - - -
 
 # 4. Blog Posts
-1. <b>Self-learning Story</b>
-    - 1.1. Front-end
-        + 1.1.1. [JavaScript ES6 Tutorials](http://bit.ly/M_JS_ES6_NN) on April 4, 2019.
-        + 1.1.2. [Asynchronous JavaScript](http://bit.ly/M_JS_Async_NN) on April 5, 2019.
-        + 1.1.3. [Object Oriented JavaScript](http://bit.ly/M_JS_OO_NN) on April 7, 2019.
-        + 1.1.4.1. [JavaScript ES6-ES8 [Part 1 of 2]](http://bit.ly/M_JS_ES6-8_1_CT) on April 9, 2019.
-        + 1.1.4.2. [JavaScript ES6-ES8 [Part 2 of 2]](http://bit.ly/M_JS_ES6-8_2_CT) on April 10, 2019.
-        + 1.1.5. [Regular Expressions — Programming with Text](http://bit.ly/M_JS_Regex_CT) on April 11, 2019.
-        + 1.1.6. [Vue CLI3](http://bit.ly/M_Vue_CLI3_NN) on April 12, 2019.
-        + 1.1.7. [Vue JS2 by Net Ninja](http://bit.ly/M_VueJS2_NN) on April 14, 2019.
-        + 1.1.8. [Vuex by Net Ninja](http://bit.ly/M_Vuex_CSM_NN) on April 14, 2019.
-        + 1.1.9.1. [Vuetify by Net Ninja [Part 1 of 3]](http://bit.ly/M_Vuetify_1_of_3_NN) on April 15, 2019.
-        + 1.1.9.2. [Vuetify by Net Ninja [Part 2 of 3]](http://bit.ly/M_Vuetify_2_of_3_NN) on April 15, 2019.
-        + 1.1.9.3. [Vuetify by Net Ninja [Part 3 of 3]](http://bit.ly/M_Vuetify_3_of_3_NN) on April 16, 2019.
-    - 1.2. Back-end
-        + 1.2.1. [Python3 by Net Ninja](http://bit.ly/M_Python3_NN) on April 23, 2019.
-2. <b>Project Weekly Report</b>
-    - 2.1. [Plans to get a job as a front-end developer by the end of 2019](http://bit.ly/week_0_goals) on April 4, 2019.
-    - 2.2. [Portfolio Project Week 1 Report](http://bit.ly/M_p_v2_wk_1) on April 12, 2019.
-    - 2.3. [Portfolio Project Week 2 Report](http://bit.ly/M_p_v2_wk_2) on April 19, 2019.
+1. [JavaScript ES6 Tutorials](http://bit.ly/M_JS_ES6_NN) on April 4, 2019.
+2. [Asynchronous JavaScript](http://bit.ly/M_JS_Async_NN) on April 5, 2019.
+3. [Object Oriented JavaScript](http://bit.ly/M_JS_OO_NN) on April 7, 2019.
+4.1. [JavaScript ES6-ES8 [Part 1 of 2]](http://bit.ly/M_JS_ES6-8_1_CT) on April 9, 2019.
+4.2. [JavaScript ES6-ES8 [Part 2 of 2]](http://bit.ly/M_JS_ES6-8_2_CT) on April 10, 2019.
+5. [Regular Expressions — Programming with Text](http://bit.ly/M_JS_Regex_CT) on April 11, 2019.
+6. [Vue CLI3](http://bit.ly/M_Vue_CLI3_NN) on April 12, 2019.
+7. [Vue JS2 by Net Ninja](http://bit.ly/M_VueJS2_NN) on April 14, 2019.
+8. [Vuex by Net Ninja](http://bit.ly/M_Vuex_CSM_NN) on April 14, 2019.
+9.1. [Vuetify by Net Ninja [Part 1 of 3]](http://bit.ly/M_Vuetify_1_of_3_NN) on April 15, 2019.
+9.2. [Vuetify by Net Ninja [Part 2 of 3]](http://bit.ly/M_Vuetify_2_of_3_NN) on April 15, 2019.
+9.3. [Vuetify by Net Ninja [Part 3 of 3]](http://bit.ly/M_Vuetify_3_of_3_NN) on April 16, 2019.
+10. [Python3 by Net Ninja](http://bit.ly/M_Python3_NN) on April 23, 2019.
+11. [Django by Net Ninja](http://bit.ly/M_Django_NN) on April 24, 2019.
 - - -
 
 # 5. Contributing
